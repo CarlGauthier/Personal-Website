@@ -19,10 +19,12 @@ h1, h2, h3 {
 
 h1 {
     font-size: 48px;
+    text-transform: uppercase;
 }
 
 h2 {
     font-size: 36px;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -34,8 +36,22 @@ a {
     cursor: pointer;
 }
 
-.container {
+hr {
+    margin: 5px 0;
+    border: none;
+    border-bottom: 1px solid #7c7c7c;
+}
+
+.wrapper {
     padding: 0 150px;
+}
+
+.simple-container {
+    margin: 10px 0;
+}
+
+.container {
+    margin: 10px -10px;
 }
 
 .no-float::after {
@@ -60,6 +76,18 @@ a {
     color: #FFFFFF;
 }
 
+.button-holder {
+    padding: 15px 0;
+}
+
+.button-holder.center {
+    text-align: center;
+}
+
+.button-holder.right {
+    text-align: right;
+}
+
 .logo {
     float: left;
     width: 164px;
@@ -68,20 +96,116 @@ a {
     background-size: contain;
 }
 
-.main-header {
+.blog-post {
+    float: left;
+    margin: 10px;
+    width: calc(50% - 20px);
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 5px -2px rgba(0,0,0,0.3);
+}
+
+.blog-post header {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(to top right, #4B4B4B 25%, #0051FF 100%);
+}
+
+.blog-post header img {
+    width: 100%;
+}
+
+.blog-post header h2 {
+    position: absolute;
+    bottom: 10%;
+    padding: 0 30px;
+    color: white;
+    transition: color 0.2s;
+}
+
+.blog-post header:hover h2 {
+    color: #FFD700;
+}
+
+.blog-post p {
+    margin: 20px 30px;
+}
+
+.blog-post .date {
+    margin: 0;
+    padding: 10px 30px;
+    border-top: 1px solid #D7D7D7;
+}
+
+.blog-post .link {
+    text-align: right;
+    color: #0051FF;
+}
+
+.project-tile {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    width: calc(100% / 3);
+    background-color: #000000;
+    user-select: none;
+}
+
+.project-tile img {
+    display: block;
+    width: 100%;
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out, filter 0.2s ease-out;
+}
+
+.project-tile:hover img {
+    opacity: 0.5;
+    transform: scale(1.15, 1.15);
+    filter: blur(10px);
+}
+
+.project-tile .content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+}
+
+.project-tile .content * {
+    text-align: center;
+    color: white;
+}
+
+.project-tile .content h2 {
+    margin-top: 30%;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.project-tile .content h3 {
+    margin-top: 10px;
+}
+
+.project-tile:hover .content {
+    opacity: 1;
+}
+
+#main-header {
     padding: 20px 0;
     background: #2F44C1 url(../img/hh.png) center center;
     background-size: cover;
     box-shadow: 0 -2px 10px 0 rgba(0,0,0,0.3) inset;
 }
 
-.main-header nav {
+#main-header nav {
     float: right;
     font: 20px 'Permanent Marker', cursive;
     color: white;
 }
 
-.main-header nav li {
+#main-header nav li {
     float: left;
     text-align: center;
     padding: 5px 10px;
@@ -91,7 +215,7 @@ a {
     transition: color 0.1s;
 }
 
-.main-header nav li:hover {
+#main-header nav li:hover {
     color: #FFD700;
 }
 
@@ -111,68 +235,9 @@ a {
 
 #home-project {
     padding: 40px 0;
-}
-
-#home-project .project-container {
-    margin: 10px -10px;
-}
-
-#home-project .project-tile {
-    display: block;
-    position: relative;
-    margin: 10px;
-    overflow: hidden;
-    float: left;
-    width: calc(33% - 20px);
-    background-color: #000000;
-}
-
-#home-project .project-tile img {
-    display: block;
-    width: 100%;
-    transition: opacity 0.2s ease-out, transform 0.2s ease-out, filter 0.2s ease-out;
-}
-
-#home-project .project-tile:hover img {
-    opacity: 0.5;
-    transform: scale(1.15, 1.15);
-    filter: blur(10px);
-}
-
-#home-project .project-tile .content {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    opacity: 0;
-    transition: opacity 0.2s ease-out;
-}
-
-#home-project .project-tile .content * {
-    text-align: center;
-    color: white;
-}
-
-#home-project .project-tile .content h2 {
-    margin-top: 30%;
-    font-style: italic;
-    font-weight: bold;
-}
-
-#home-project .project-tile .content h3 {
-    margin-top: 10px;
-}
-
-#home-project .project-tile:hover .content {
-    opacity: 1;
-}
-
-#home-project footer {
-    padding: 0 12px;
-    text-align: right;
+    background-color: #D7D7D7;
 }
 
 #home-blog {
-    padding: 20px 0;
-    height: 500px;
-    background-color: #D7D7D7;
+    padding: 40px 0;
 }

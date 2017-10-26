@@ -8,8 +8,8 @@
     <title>TEST</title>
 </head>
 <body>
-    <header class="main-header">
-        <div class='container no-float'>
+    <header id="main-header">
+        <div class='wrapper no-float'>
             <div class='logo'><!----></div>
             <nav class='no-float'>
                 <ul>
@@ -21,21 +21,63 @@
                 </ul>
             </nav>
         </div>
-        <div id="presentation" class="container">
+        <div id="presentation" class="wrapper">
             <h1>Carl Gauthier</h1>
             <h3>Développeur</h3>
         </div>
     </header>
+    <section id="home-blog">
+        <div class="wrapper">
+        
+            <h1>Articles récents</h1>
+            <hr/>
+        
+            <div class="container no-float">
+                <article class="blog-post">
+                    <a>
+                        <header>
+                            <h2>Suspendisse sit amet vestibulum ex.</h2>
+                        </header>
+                    </a>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus luctus bibendum. Vivamus in mi id lorem venenatis finibus. Mauris at commodo neque, ut lobortis sapien. Suspendisse potenti. Aliquam odio enim, vestibulum ac purus vel, aliquam blandit orci. Etiam at mollis ligula, non dictum arcu. Suspendisse vitae libero maximus lectus gravida pulvinar at vel lacus. Etiam congue aliquam sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut iaculis velit a condimentum eleifend. Morbi euismod lacinia tristique.
+                    </p>
+                    <a class="link"><p>Continuez à lire...</p></a>
+                    <p class="date">2017-10-25</p>
+                </article>
+
+                <article class="blog-post">
+                    <a>
+                        <header>
+                            <img src="img/hh2.png" draggable="false"/>
+                            <h2>Lorem ipsum dolor sit amet.</h2>
+                        </header>
+                    </a>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et purus nisl. Donec cursus, quam nec tempus aliquet, arcu nibh feugiat dui, eu blandit turpis magna sit amet quam. Cras eu tortor risus. Ut ac nulla vitae mi rhoncus suscipit in ac metus.
+                    </p>
+                    <a class="link"><p>Continuez à lire...</p></a>
+                    <p class="date">2017-10-25</p>
+                </article>
+            </div>
+            <div class="button-holder right">
+                <a href="http://gauthierchloe.com/" class="href-button">Visitez le blog</a>
+            </div>
+        </div>
+        
+    </section>
     <section id='home-project'>
-        <div class="container">
+        <div class="wrapper">
+            
             <h1>Projets en vedette</h1>
             
-            <div class="project-container no-float">
+            <div class="simple-container no-float">
+                
                 <a class="project-tile">
-                    <img src="img/thumb.png"/>
+                    <img src="img/thumb1.png" draggable="false"/>
                     <div class="content">
-                        <h2>Soccer Arena</h2>
-                        <h3>Jeu Unity</h3>
+                        <h2>Sample Project</h2>
+                        <h3>Project context</h3>
                     </div>
                 </a>
                 
@@ -48,20 +90,19 @@
                 </a>
                 
                 <a class="project-tile">
-                    <img src="img/thumb.png"/>
+                    <img src="img/thumb2.png"/>
                     <div class="content">
-                        <h2>Soccer Arena</h2>
-                        <h3>Jeu Unity</h3>
+                        <h2>Sample Project</h2>
+                        <h3>Project context</h3>
                     </div>
                 </a>
+                
             </div>
             
-            <footer>
-                <a href="http://gauthierchloe.com/" class="href-button">Voir les autres projets</a>
-            </footer>
+            <div class="button-holder right">
+                <a href="http://gauthierchloe.com/" class="href-button">Voir tous les projets</a>
+            </div>
         </div>
-    </section>
-    <section id="home-blog">
     </section>
 </body>
 </html>
