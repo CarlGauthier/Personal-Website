@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto Slab', sans-serif;
+    background-color: #E6E6E6;
+}
+
+*::selection {
+    color: #000000;
+    background-color: #00bfff;
+}
+
+div, section, header {
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: normal;
+    color: #4B4B4B;
+}
+
+h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Permanent marker', sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+hr {
+    margin: 5px 0;
+    border: none;
+    border-bottom: 2px solid #7c7c7c;
+}
+
+.wrapper {
+    margin: auto;
+    width: 1200px;
+}
+
+.simple-container {
+    margin: 50px 0;
+}
+
+.container {
+    margin: 50px -10px;
+}
+
+.no-float::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.image {
+    background-size: cover;
+    background-color: #4B4B4B;
+}
+
+.bottom-align {
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+.href-button {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #0051FF;
+    border: 3px solid #0051FF;
+    cursor: pointer;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.href-button:hover {
+    background-color: #0051FF;
+    color: #FFFFFF;
+}
+
+.button-holder {
+    padding: 15px 0;
+}
+
+.button-holder.center {
+    text-align: center;
+}
+
+.button-holder.right {
+    text-align: right;
+}
+
+.logo {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background: url(../img/logodrawn.png) no-repeat;
+    background-size: contain;
+}

@@ -1,0 +1,40 @@
+.blog-post-col {
+    float: left;
+    width: calc(100% / 3);
+}
+
+.blog-post {
+    margin: 20px 10px;
+    background-color: #FFF;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.blog-post header {
+    background-size: cover;
+    width: 100%;
+    transition: filter 0.1s;
+}
+
+.blog-post header h2 {
+    padding: 20px 30px;
+    color: #FFF;
+}
+
+.blog-post p {
+    margin: 20px 30px;
+}
+
+.blog-post .date {
+    margin: 0;
+    padding: 10px 30px;
+    border-top: 1px solid #D7D7D7;
+}
+
+.blog-post .link {
+    text-align: right;
+    color: #0051FF;
+}
+
+.blog-post .link:hover {
+    color: #4B4B4B;
+}

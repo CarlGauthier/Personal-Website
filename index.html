@@ -1,10 +1,10 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <link rel='stylesheet' type='text/css' href='css/style.css'/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Permanent+Marker|Rock+Salt|Questrial" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' href='css/master.css'/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Rock+Salt|Permanent+Marker|Questrial" rel="stylesheet">
     <script src='js/jquery-3.2.1.min.js'></script>
-    <script src='js/script.js'></script>
+    <script src='js/slick.min.js'></script>
     <title>TEST</title>
 </head>
 <body>
@@ -26,50 +26,7 @@
             <h3>Développeur</h3>
         </div>
     </header>
-    <section id="home-blog">
-        <div class="wrapper">
-        
-            <h1>Articles récents</h1>
-            <hr/>
-        
-            <div class="container no-float">
-                <article class="blog-post">
-                    <a>
-                        <header style="background-image: url(img/hh2.png);">
-                            <div class="bottom-align">
-                                <h2>Suspendisse sit amet vestibulum ex.</h2>
-                            </div>
-                        </header>
-                    </a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus luctus bibendum. Vivamus in mi id lorem venenatis finibus. Mauris at commodo neque, ut lobortis sapien. Suspendisse potenti. Aliquam odio enim, vestibulum ac purus vel, aliquam blandit orci. Etiam at mollis ligula, non dictum arcu. Suspendisse vitae libero maximus lectus gravida pulvinar at vel lacus. Etiam congue aliquam sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut iaculis velit a condimentum eleifend. Morbi euismod lacinia tristique.
-                    </p>
-                    <a class="link"><p>Continuez à lire...</p></a>
-                    <p class="date">2017-10-25</p>
-                </article>
-
-                <article class="blog-post">
-                    <a>
-                        <header>
-                            <div class="bottom-align">
-                                <h2>Lorem ipsum dolor sit amet.</h2>
-                            </div>
-                        </header>
-                    </a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et purus nisl. Donec cursus, quam nec tempus aliquet, arcu nibh feugiat dui, eu blandit turpis magna sit amet quam. Cras eu tortor risus. Ut ac nulla vitae mi rhoncus suscipit in ac metus.
-                    </p>
-                    <a class="link"><p>Continuez à lire...</p></a>
-                    <p class="date">2017-10-25</p>
-                </article>
-            </div>
-            <div class="button-holder right">
-                <a href="http://gauthierchloe.com/" class="href-button">Visitez le blog</a>
-            </div>
-        </div>
-        
-    </section>
-    <section id='home-project'>
+        <section id='home-project'>
         <div class="wrapper">
             
             <h1>Projets en vedette</h1>
@@ -77,27 +34,33 @@
             <div class="simple-container no-float">
             
                 <a class="main-project project-tile">
-                    <div class="image" style="background-image: url(img/);"><!----></div>
+                    <div class="image" style="background-image: url(img/bird.jpg);"><!----></div>
+                    
                     <div class="content">
-                        <h2>Soccer Arena</h2>
-                        <h3>Jeu Unity</h3>
+                        <h2>Sample Project</h2>
                     </div>
+                    
+                    <div class="ribbon"><h3>Contexte projet</h3></div>
                 </a>
                 
                 <a class="project-tile">
-                    <div class="image" style="background-image: url(img/);"><!----></div>
+                    <div class="image" style="background-image: url(img/thumb.png);"><!----></div>
+                    
                     <div class="content">
                         <h2>Sample Project</h2>
-                        <h3>Project context</h3>
                     </div>
+                    
+                    <div class="ribbon right"><h3>Contexte projet</h3></div>
                 </a>
                 
                 <a class="project-tile">
-                    <div class="image" style="background-image: url(img/);"><!----></div>
+                    <div class="image" style="background-image: url(img/rin.jpg);"><!----></div>
+                    
                     <div class="content">
                         <h2>Sample Project</h2>
-                        <h3>Project context</h3>
                     </div>
+                    
+                    <div class="ribbon right"><h3>Contexte projet</h3></div>
                 </a>
                 
             </div>
@@ -107,5 +70,54 @@
             </div>
         </div>
     </section>
+    <section id="home-blog">
+        <div class="wrapper">
+        
+            <h1>Articles récents</h1>
+            <hr/>
+        
+            <div class="container no-float">
+                <div class="blog-post-col">
+                    <article class="blog-post">
+                        <a>
+                            <header>
+                                <div class="bottom-align">
+                                    <h2 style="color: #4B4B4B;">Suspendisse sit amet vestibulum ex.</h2>
+                                </div>
+                            </header>
+                        </a>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus luctus bibendum. Vivamus in mi id lorem venenatis finibus. Mauris at commodo neque, ut lobortis sapien. Suspendisse potenti. Aliquam odio enim, vestibulum ac purus vel, aliquam blandit orci. Etiam at mollis ligula, non dictum arcu. Suspendisse vitae libero maximus lectus gravida pulvinar at vel lacus. Etiam congue aliquam sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut iaculis velit a condimentum eleifend. Morbi euismod lacinia tristique.
+                        </p>
+                        <a class="link"><p>Continuez à lire...</p></a>
+                        <p class="date">27 Octobre 2017</p>
+                    </article>
+                </div>
+                <div class="blog-post-col">
+                    <article class="blog-post">
+                        <a>
+                            <header style="background-image: url(img/hh2.png);">
+                                <h2 style="color: #FFF;">Suspendisse sit amet vestibulum ex.</h2>
+                            </header>
+                        </a>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus luctus bibendum. Vivamus in mi id lorem venenatis finibus. Mauris at commodo neque, ut lobortis sapien. Suspendisse potenti. Aliquam odio enim, vestibulum ac purus vel, aliquam blandit orci. Etiam at mollis ligula, non dictum arcu. Suspendisse vitae libero maximus lectus gravida pulvinar at vel lacus. Etiam congue aliquam sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut iaculis velit a condimentum eleifend. Morbi euismod lacinia tristique.
+                        </p>
+                        <a class="link"><p>Continuez à lire...</p></a>
+                        <p class="date">2017-10-25</p>
+                    </article>
+                </div>
+                <div class="blog-post-col">
+                    
+                </div>
+            </div>
+            <div class="button-holder right">
+                <a href="http://gauthierchloe.com/" class="href-button">Visitez le blog</a>
+            </div>
+        </div>
+        
+    </section>
+    <footer class="main-footer">
+    </footer>
 </body>
 </html>
