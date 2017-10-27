@@ -43,7 +43,8 @@ hr {
 }
 
 .wrapper {
-    padding: 0 150px;
+    margin: auto;
+    width: 1070px;
 }
 
 .simple-container {
@@ -60,11 +61,18 @@ hr {
     clear: both;
 }
 
+.bottom-align {
+    display: table-cell;
+    vertical-align: bottom;
+}
+
 .href-button {
     display: inline-block;
     box-sizing: border-box;
     padding: 10px 15px;
-    font: italic bold 20px 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
     color: #0051FF;
     border: 3px solid #0051FF;
     cursor: pointer;
@@ -91,7 +99,7 @@ hr {
 .logo {
     float: left;
     width: 164px;
-    height: 100px;
+    min-height: 100px;
     background: url(../img/logo.svg) no-repeat;
     background-size: contain;
 }
@@ -99,33 +107,30 @@ hr {
 .blog-post {
     float: left;
     margin: 10px;
+    overflow: hidden;
     width: calc(50% - 20px);
     background-color: #FFFFFF;
-    box-shadow: 0 2px 5px -2px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
 .blog-post header {
+    display: table;
     position: relative;
-    overflow: hidden;
+    background-color: #4B4B4B;
+    background-image: linear-gradient(to top right, #4B4B4B 50%, #8C8C8C 100%);
+    background-size: cover;
     width: 100%;
-    height: 200px;
-    background-image: linear-gradient(to top right, #4B4B4B 25%, #0051FF 100%);
+    min-height: 180px;
+    transition: filter 0.1s;
 }
 
-.blog-post header img {
-    width: 100%;
+.blog-post header:hover {
+    filter: brightness(120%);
 }
 
 .blog-post header h2 {
-    position: absolute;
-    bottom: 10%;
-    padding: 0 30px;
-    color: white;
-    transition: color 0.2s;
-}
-
-.blog-post header:hover h2 {
-    color: #FFD700;
+    padding: 20px 30px;
+    color: #FFFFFF;
 }
 
 .blog-post p {
@@ -143,6 +148,10 @@ hr {
     color: #0051FF;
 }
 
+.blog-post .link:hover {
+    color: #4B4B4B;
+}
+
 .project-tile {
     display: block;
     position: relative;
@@ -153,16 +162,19 @@ hr {
     user-select: none;
 }
 
-.project-tile img {
-    display: block;
-    width: 100%;
-    transition: opacity 0.2s ease-out, transform 0.2s ease-out, filter 0.2s ease-out;
+.project-tile.main-project {
+    width: calc(100% / 1.5)
 }
 
-.project-tile:hover img {
-    opacity: 0.5;
-    transform: scale(1.15, 1.15);
-    filter: blur(10px);
+.project-tile .image {
+    display: block;
+    width: 100%;
+    padding-bottom: 75%;
+    transition: filter 0.2s ease-out;
+}
+
+.project-tile:hover .image {
+    filter: blur(23px);
 }
 
 .project-tile .content {
@@ -220,7 +232,7 @@ hr {
 }
 
 #presentation {
-    margin: 100px 0;
+    margin: 100px auto;
 }
 
 #presentation h1 {
