@@ -12,10 +12,6 @@ body {
     background-color: #00bfff;
 }
 
-div, section, header {
-    box-sizing: border-box;
-}
-
 h1, h2, h3 {
     font-family: 'Roboto Slab', sans-serif;
     font-weight: normal;
@@ -51,6 +47,7 @@ hr {
 .wrapper {
     margin: auto;
     width: 1200px;
+    box-sizing: border-box;
 }
 
 .simple-container {
@@ -59,6 +56,10 @@ hr {
 
 .container {
     margin: 50px -10px;
+}
+
+section {
+    padding: 40px 0;
 }
 
 .no-float::after {
@@ -80,9 +81,10 @@ hr {
 .href-button {
     display: inline-block;
     box-sizing: border-box;
-    padding: 10px 15px;
+    padding: 15px 20px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
+    text-align: center;
     text-transform: uppercase;
     color: #0051FF;
     border: 3px solid #0051FF;
@@ -95,15 +97,23 @@ hr {
     color: #FFFFFF;
 }
 
+.icon {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    background-size: 100%;
+}
+
 .button-holder {
     padding: 15px 0;
 }
 
-.button-holder.center {
+.align-center {
     text-align: center;
 }
 
-.button-holder.right {
+.align-right {
     text-align: right;
 }
 

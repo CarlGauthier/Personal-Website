@@ -45,15 +45,11 @@
     left: -20px;
 }
 
-.project-tile .ribbon.right {
-    left: auto;
-    right: -20px;
-} 
-
 .project-tile .ribbon h3 {
     padding: 10px;
     width: 300px;
     text-align: center;
+    color: #bc4e00;
     background-color: #FFD700;
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
@@ -65,16 +61,5 @@
     top: -20;
     border-style: solid;
     border-width: 0 0 20px 20px;
-    border-color: transparent transparent #FF9900 transparent;
-}
-
-.project-tile .ribbon.right::before {
-    position: absolute;
-    display: block;
-    content: "";
-    top: -20;
-    right: 0;
-    border-style: solid;
-    border-width: 0 20px 20px 0;
     border-color: transparent transparent #FF9900 transparent;
 }

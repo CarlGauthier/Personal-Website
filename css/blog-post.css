@@ -12,12 +12,16 @@
 .blog-post header {
     background-size: cover;
     width: 100%;
-    transition: filter 0.1s;
+}
+
+.blog-post header:hover h2 {
+    background-color: rgba(0,0,0,0.05);
 }
 
 .blog-post header h2 {
     padding: 20px 30px;
     color: #FFF;
+    transition: background-color 0.1s;
 }
 
 .blog-post p {

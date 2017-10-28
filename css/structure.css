@@ -29,15 +29,9 @@
     margin: 25px auto 100px;
 }
 
-#signature {
-    width: 800px;
-    min-height: 200px;
-    background: url(../img/nameS.png) no-repeat;
-    background-size: contain;
-}
-
 #presentation h1 {
-    font: 80px 'Rock Salt', cursive;
+    font: 120px 'KGSecondChancesSketch', cursive;
+    font-style: italic;
     color: #FFF;
 }
 
@@ -47,15 +41,20 @@
 }
 
 #home-project {
-    padding: 40px 0;
     background-color: #D7D7D7;
 }
 
-#home-blog {
-    padding: 40px 0;
+.main-footer {
+    padding: 50px 0;
+    background: url(../img/pattern.png);
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3) inset;
 }
 
-.main-footer {
-    background-color: #4B4B4B;
-    height: 500px;
+.main-footer h2 {
+    padding-bottom: 25px;
+    color: #FFF;
+}
+
+.main-footer .icon {
+    margin: 0 15px;
 }
