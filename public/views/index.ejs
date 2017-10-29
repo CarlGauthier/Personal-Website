@@ -1,0 +1,44 @@
+<html>
+<head>
+    <%- include head-common.ejs %>
+    <title>Carl Gauthier - <%= title %></title>
+</head>
+<body>
+    <%- include main-header.ejs %>
+    <section id='home-project'>
+        <div class="wrapper">
+            
+            <h1>Projets en vedette</h1>
+            
+            <div class="simple-container no-float">
+            
+            <%- include project-tiles.ejs %>
+                
+            </div>
+            
+            <div class="align-right">
+                <a href="http://gauthierchloe.com/" class="href-button">Voir tous les projets</a>
+            </div>
+        </div>
+    </section>
+    <section id="home-blog">
+        <div class="wrapper">
+        
+            <h1>Articles récents</h1>
+            <hr/>
+            
+            <div class="container no-float">
+            
+            <%- include blog-posts.ejs %>
+                
+            </div>
+            
+            <div class="align-right">
+                <a href="http://gauthierchloe.com/" class="href-button">Visitez le blog</a>
+            </div>
+        </div>
+        
+    </section>
+    <%- include main-footer.ejs %>
+</body>
+</html>

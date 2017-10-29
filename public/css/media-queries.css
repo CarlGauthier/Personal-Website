@@ -1,0 +1,135 @@
+@media screen and (min-width: 0) and (max-width: 767px) {
+    
+    .wrapper {
+        padding: 30px;
+        width: 100%;
+    }
+    
+    h1, h2, h3 {
+        text-align: center;
+    }
+    
+    .href-button {
+        width: 100%;
+    }
+    
+    #main-header {
+        min-height: 100vh;
+    }
+    
+    #main-header nav {
+        float: none;
+        margin: -50px -30px 25px;
+        min-height: 60px;
+        background: url(../img/pattern.png);
+    }
+    
+    #main-header nav:hover .dropdown {
+        display: block;
+    }
+    
+    #main-header nav .dropdown {
+        padding-top: 60px;
+        display: none;
+    }
+    
+    #main-header nav .dropdown:hover {
+        display: block;
+    }
+
+    #main-header nav li {
+        text-align: center;
+        float: none;
+        border-top: 6px solid;
+        border-image: url(../img/border.png) 6 5 7 7 round stretch;
+    }
+    
+    #presentation {
+        margin: -20px auto 25px;
+    }
+    
+    #presentation h1 {
+        font-size: 60px;
+    }
+    
+    .project-tile, .project-tile:nth-child(1) {
+        width: 100%;
+    }
+    
+    .project-tile:nth-child(n+4) {
+        display: none;
+    }
+    
+    .project-tile .content h2 {
+        font-size: 20px;
+    }
+    
+    #home-project .align-right {
+        text-align: center;
+    }
+    
+    .blog-post {
+        width: calc(100% - 30px);
+    }
+    
+    .blog-post header h2 {
+        font-size: 28px;
+    }
+    
+    .blog-post .content {
+        padding-left: 15px;
+        height: auto;
+    }
+    
+    .blog-post .date {
+        float: none;
+        margin-left: -20px;
+        text-align: center;
+    }
+    
+    .blog-post .link {
+        display: block;
+        float: none;
+        margin: 20px 0 20px -20px;
+        padding: 20px 0;
+        color: #bc4e00;
+        background-color: #FFD700;
+    }
+    
+    .logo {
+        float: none;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    
+    h1, h2, h3 {
+        text-align: center;
+    }
+    
+    .wrapper {
+        padding: 40px;
+        width: 100%;
+    }
+    
+    #presentation h1 {
+        font-size: 110px;
+    }
+    
+    .project-tile {
+        width: 50%;
+    }
+    
+    .project-tile:nth-child(5) {
+        display: none;
+    }
+    
+    .blog-post {
+        width: calc(100% - 30px);
+    }
+    
+    .blog-post .content {
+        height: auto;
+    }
+}

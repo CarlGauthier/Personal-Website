@@ -1,0 +1,65 @@
+.project-tile {
+    display: block;
+    position: relative;
+    float: left;
+    width: calc(25%);
+}
+
+.project-tile.main-project {
+    width: calc(50%);
+}
+
+.project-tile .image {
+    width: 100%;
+    padding-bottom: 75%;
+    transition: filter 0.2s ease-out;
+}
+
+.project-tile:hover .image {
+    filter: brightness(50%);
+}
+
+.project-tile .content {
+    position: absolute;
+    top: 0;
+    padding-top: 25%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+}
+
+.project-tile .content h2 {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+}
+
+.project-tile:hover .content {
+    opacity: 1;
+}
+
+.project-tile .ribbon {
+    position: absolute;
+    bottom: 20px;
+    left: -20px;
+}
+
+.project-tile .ribbon h3 {
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    color: #bc4e00;
+    background-color: #FFD700;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.project-tile .ribbon::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: -20;
+    border-style: solid;
+    border-width: 0 0 20px 20px;
+    border-color: transparent transparent #FF9900 transparent;
+}
