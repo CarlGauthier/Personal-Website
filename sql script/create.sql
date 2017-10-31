@@ -1,19 +1,24 @@
-DROP DATABASE cgDb
+DROP DATABASE IF EXISTS CarlDB;
+CREATE DATABASE CarlDB;
 
--- ----------------------------
+USE CarlDB;
 
-CREATE DATABASE cgDb;
-USE cgDb;
+CREATE TABLE Project
+(
+	id			int				NOT NULL	auto_increment,
+    PRIMARY KEY (id),
+    
+    name		varchar(50)		NOT NULL,
+    image		varchar(15)		NOT NULL,
+    priority	int				NULL		unique,
+    
+    context		int				NOT NULL
+);
 
-CREATE TABLE post (
+CREATE TABLE Context
+(
+	id			int				NOT NULL	auto_increment,
+    PRIMARY KEY (id),
     
-    id          		INT             NOT NULL    AUTO_INCREMENT,
-    
-    title       		VARCHAR(100)    NOT NULL,
-    publicationDate		DATE			NOT NULL,
-    lastEditDate		DATE			NULL,
-    articlePath			VARCHAR(20)		NOT NULL,
-    headerPath			VARCHAR(20)		NULL,
-    
-    PRIMARY KEY(id)
-)
+    name		varchar(50)		NOT NULL
+);

@@ -17,10 +17,7 @@ connection.connect(function(err) {
 });
 
 app.get('/', function(req, res) {
-    var data = SQLQuery('Select * From ProjectView Limit 5');
-    console.log("Json data :");
-    console.log(data);
-    Action('index.ejs', 'Accueil', data, res);
+    QueryAction('index.ejs', 'Select * From ProjectView Limit 5', 'Accueil', res);
 });
 
 function QueryAction(page, query, pageTitle, res) {
