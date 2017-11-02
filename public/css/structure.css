@@ -2,6 +2,7 @@
     padding: 20px 0;
     background: #0051FF url(../img/hh.png) center;
     background-size: cover;
+    background-attachment: fixed;
     box-shadow: 0 -2px 5px rgba(0,0,0,0.3) inset;
 }
 

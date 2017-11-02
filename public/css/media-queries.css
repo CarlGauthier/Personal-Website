@@ -77,8 +77,14 @@
     }
     
     .blog-post .content {
-        padding-left: 15px;
+        padding-left: 0;
+        border: none;
         height: auto;
+    }
+    
+    .blog-post footer {
+        padding-left: 0;
+        border: none;
     }
     
     .blog-post .date {
@@ -90,7 +96,7 @@
     .blog-post .link {
         display: block;
         float: none;
-        margin: 20px 0 20px -20px;
+        margin: 20px 0;
         padding: 20px 0;
         color: #bc4e00;
         background-color: #FFD700;
