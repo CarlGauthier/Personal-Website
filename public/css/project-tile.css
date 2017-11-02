@@ -44,7 +44,6 @@
     position: absolute;
     bottom: 20px;
     left: -20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
 .project-tile .ribbon h3 {
@@ -52,6 +51,7 @@
     max-width: 250px;
     color: #bc4e00;
     background-color: #FFD700;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
 .project-tile .ribbon::before {

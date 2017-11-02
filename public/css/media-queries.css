@@ -1,7 +1,7 @@
 @media screen and (min-width: 0) and (max-width: 767px) {
     
     .wrapper {
-        padding: 30px;
+        padding: 25px;
         width: 100%;
     }
     
@@ -94,6 +94,7 @@
         padding: 20px 0;
         color: #bc4e00;
         background-color: #FFD700;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     }
     
     .logo {
@@ -102,14 +103,13 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1070px) {
     
     h1, h2, h3 {
         text-align: center;
     }
     
     .wrapper {
-        padding: 40px;
         width: 100%;
     }
     
@@ -131,5 +131,12 @@
     
     .blog-post .content {
         height: auto;
+    }
+}
+
+@media screen and (min-width: 1070px) and (max-width: 1500px) {
+    
+    .wrapper {
+        width: 1070px;
     }
 }

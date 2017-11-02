@@ -47,6 +47,7 @@ hr {
 }
 
 .wrapper {
+    padding: 40px;
     margin: auto;
     width: 1500px;
     box-sizing: border-box;

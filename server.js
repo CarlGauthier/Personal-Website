@@ -4,16 +4,20 @@ var mysql = require('mysql');
 
 app.use(express.static('public'));
 app.set('views', 'public/views');
+require('dotenv').config();
 
 var connection = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    database : 'carldb'
+    user: process.env.MYSQL_USER,
+    password: process.env.MYSQL_PASSWORD,
+    host: process.env.MYSQL_HOST,
+    database : process.env.MYSQL_DATABASE
 });
 
 connection.connect(function(err) {
+    console.log(process.env.MYSQL_DATABASE);
     if (err) throw err;
         console.log("Connected!");
+    
 });
 
 app.get('/', function(req, res) {
@@ -31,19 +35,4 @@ function QueryAction(page, query, pageTitle, res) {
     });
 }
 
-function Action(page, pageTitle, result, res) {
-    var json = {title : pageTitle, data : result};
-    res.render(page, json);
-}
-
-function SQLQuery(query) {
-    connection.query(query, function(err, result) {
-        if(err) {
-            throw err;
-        } else {
-            return result;
-        }
-    });
-}
-
-app.listen(8080);
+app.listen(80);
