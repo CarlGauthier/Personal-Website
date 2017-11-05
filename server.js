@@ -4,6 +4,7 @@ var mysql = require('mysql');
 
 app.use(express.static('public'));
 app.set('views', 'public/views');
+app.set('view engine', 'ejs');
 require('dotenv').config();
 
 var connection = mysql.createConnection({
@@ -29,35 +30,9 @@ function Action(page, query, pageTitle, res) {
         if(err){
             throw err;
         } else {
-            console.log(result.count);
-            //var json = {title: pageTitle}
-            //json.push()
-            //console.log(json);
-            //res.render(page, {title: pageTitle, model: result[0], model2: result[1]});
-        }
-    });
-    connection.end();
-}
-
-/*
-function Action(page, query, pageTitle, res) {
-    connection.query(query, function(err, result) {
-        if(err){
-            throw err;
-        } else {
-            console.log(result);
             res.render(page, {title: pageTitle, data: result});
         }
     });
-    connection.end();
 }
-*/
 
 app.listen(80);
-
-/*
-var myObj = new Object;
-var a = 'string1';
-myObj[a] = 'whatever';
-alert(myObj.string1)
-*/

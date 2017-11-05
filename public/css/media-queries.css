@@ -1,7 +1,7 @@
 @media screen and (min-width: 0) and (max-width: 767px) {
     
     .wrapper {
-        padding: 25px;
+        padding: 0 25px;
         width: 100%;
     }
     
@@ -109,7 +109,7 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1070px) {
+@media screen and (min-width: 768px) and (max-width: 1170px) {
     
     h1, h2, h3 {
         text-align: center;
@@ -140,9 +140,9 @@
     }
 }
 
-@media screen and (min-width: 1070px) and (max-width: 1500px) {
+@media screen and (min-width: 1170px) and (max-width: 1500px) {
     
     .wrapper {
-        width: 1070px;
+        width: 1170px;
     }
 }

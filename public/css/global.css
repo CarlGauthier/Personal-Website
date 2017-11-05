@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Roboto Slab', sans-serif;
+    color: #4B4B4B;
     background-color: #E6E6E6;
 }
 
@@ -17,7 +18,6 @@ body {
 h1, h2, h3 {
     font-family: 'Roboto Slab', sans-serif;
     font-weight: normal;
-    color: #4B4B4B;
 }
 
 h1 {
@@ -26,8 +26,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Permanent marker', sans-serif;
-    font-size: 36px;
+    font-size: 32px;
     text-transform: uppercase;
 }
 
@@ -40,6 +39,10 @@ a {
     cursor: pointer;
 }
 
+.link:hover {
+    text-decoration: underline;
+}
+
 hr {
     margin: 5px 0;
     border: none;
@@ -47,7 +50,7 @@ hr {
 }
 
 .wrapper {
-    padding: 40px;
+    padding: 0 40px;
     margin: auto;
     width: 1500px;
     box-sizing: border-box;
@@ -75,11 +78,6 @@ section {
     background-size: cover;
     background-position: center;
     background-color: #4B4B4B;
-}
-
-.bottom-align {
-    display: table-cell;
-    vertical-align: bottom;
 }
 
 .href-button {
@@ -111,12 +109,4 @@ section {
 
 .align-right {
     text-align: right;
-}
-
-.logo {
-    float: left;
-    width: 200px;
-    height: 200px;
-    background: url(../img/logodrawn.png) no-repeat;
-    background-size: contain;
 }
