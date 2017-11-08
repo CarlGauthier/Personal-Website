@@ -30,18 +30,22 @@ CREATE TABLE BlogPost
 	id				int				NOT NULL	auto_increment,
     
     title			varchar(100)	NOT NULL,
-	creationDate	date			NOT NULL,
-    lastEditDate	date			NULL,
+    image			varchar(15)		NOT NULL,
+    content			text			NOT NULL,
+	creationDate	datetime		NULL		default now(),
+    lastEditDate	datetime		NULL,
     
-    author			tinyint			NOT NULL,	-- FK
+    author			tinyint			NOT NULL	default 1,	-- FK
     
     PRIMARY KEY (id)
 );
 
 CREATE TABLE BlogPostRelatedProject
 (
-	Project			int				NOT NULL,	-- FK
-	blogPost		int				NOT NULL	-- FK
+	project			int				NOT NULL,	-- FK
+	blogPost		int				NOT NULL,	-- FK
+    
+    PRIMARY KEY (project, blogPost)
 );
 
 CREATE TABLE Author

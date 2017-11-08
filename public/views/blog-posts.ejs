@@ -1,17 +1,18 @@
+
 <% for(var i = 0; i < data[1].length; i++) { %>
 
     <article class="blog-post">
 
-        <div class="image" style="background-image: url(../img/project750x563jpg/);"><!----></div>
+        <div class="image" style="background-image: url(../img/blogPost1000x750/<%= data[1][i].image %>);"><!----></div>
 
         <div class="content">
 
-            <h2>TITLE</h2>
+            <h2><%= data[1][i].title %></h2>
 
-            <span><a class="link">AUTHOR</a> - 16 octobre 2015</span>
+            <span><a class="link"><%= data[1][i].author %></a> • <%= data[1][i].creationDate %></span>
 
             <p>
-                Dans le plancher pour savoir si quelqu'un marchait et quel poids il faisait. Le cœur pouvait alors déterminer de quelle personne il s'agissait. Dans les murs, des cellules photosensibles, des micro-caméras et tout un réseau de détecteurs divers (magnétique, pression, infrarouge...) permettait de déterminer la position exacte de chaque personne et objet dans la maison, de ventiler ou chauffer en conséquence, d'allumer ou d'éteindre la lumière...
+                <%- data[1][i].content %>
             </p>
 
             <div class="align-right">

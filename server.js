@@ -22,8 +22,23 @@ connection.connect(function(err) {
 });
 
 app.get('/', function(req, res) {
-    Action('index.ejs', 'Select * From ProjectView Limit 5; Select * From Context', 'Accueil', res);
+    Action('index.ejs', 'Select * From HomeProjectView; Select * From HomeBlogPostView', 'Accueil', res);
 });
+
+app.get('/Portfolio', function(req, res) {
+    Action('portfolio.ejs', 'Select * From HomeProjectView', 'Portfolio', res);
+});
+
+app.get('/Project:id', function(req, res) {
+    console.log('Project #' + req.params.id);
+});
+
+app.get('/Blog', function(req, res) {
+    Action('blog.ejs', 'Select * From HomeBlogPostView', 'Blog', res);
+});
+
+app.get('')
+
 
 function Action(page, query, pageTitle, res) {
     connection.query(query, function(err, result) {

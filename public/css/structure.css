@@ -8,20 +8,26 @@
 #main-header nav {
     float: right;
     font: 24px 'Permanent Marker', cursive;
-    color: white;
 }
 
 #main-header nav li {
     float: left;
-    text-align: center;
-    padding: 5px 10px;
-    min-width: 100px;
     list-style-type: none;
+}
+
+#main-header nav li a {
+    text-align: center;
+    padding: 5px 15px;
+    color: white;
     cursor: pointer;
     transition: color 0.1s;
 }
 
-#main-header nav li:hover {
+#main-header nav li a {
+    
+}
+
+#main-header nav li a:hover {
     color: #FFD700;
 }
 

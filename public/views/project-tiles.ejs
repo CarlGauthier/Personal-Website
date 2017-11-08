@@ -1,7 +1,7 @@
 <% for(var i = 0; i < data[0].length; i++) { %>
 
-    <a class="project-tile">
-        <div class="image" style="background-image: url(../img/project750x563jpg/<%= data[0][i].image %>);"><!----></div>
+    <a href="/Project<%= data[0][i].id %>"  class="project-tile">
+        <div class="image" style="background-image: url(../img/project750x563/<%= data[0][i].image %>);"><!----></div>
         
         <div class="content">
             <h2><%= data[0][i].name %></h2>
