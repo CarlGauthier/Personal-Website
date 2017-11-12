@@ -1,0 +1,36 @@
+#main-header {
+    padding: 20px 0;
+    background: #0051FF url(../img/header.png) center;
+    background-size: cover;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.3) inset;
+}
+
+#main-header nav {
+    float: right;
+    font: 24px 'Permanent Marker', cursive;
+}
+
+#main-header nav li {
+    float: left;
+    list-style-type: none;
+}
+
+#main-header nav li a {
+    text-align: center;
+    padding: 5px 15px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.1s;
+}
+
+#main-header nav li a:hover {
+    color: #FFD700;
+}
+
+#main-header .logo {
+    float: left;
+    width: 250px;
+    height: 250px;
+    background: url(../img/logo.png) no-repeat;
+    background-size: contain;
+}

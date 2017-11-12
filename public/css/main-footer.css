@@ -1,0 +1,14 @@
+.main-footer {
+    padding: 50px 0;
+    background: url(../img/pattern.png);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3) inset;
+}
+
+.main-footer h2 {
+    padding-bottom: 25px;
+    color: #FFF;
+}
+
+.main-footer .icon {
+    margin: 0 15px;
+}

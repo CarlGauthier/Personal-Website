@@ -1,5 +1,7 @@
 @import url("global.css");
-@import url("structure.css");  
+@import url("structure.css");
+@import url("main-header.css");
+@import url("main-footer.css");
 @import url("project-tile.css");
 @import url("blog-post.css");
 @import url("icon.css");

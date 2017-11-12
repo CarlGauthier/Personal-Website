@@ -1,9 +1,41 @@
 <!DOCTYPE html>
 <html>
-<%- include head.ejs %>
-<body>
 
-	<h1>PORTFOLIO</h1>
+<%- include head.ejs %>
+
+<body>
+    <%- include main-header.ejs %>
+    <section id='portfolio-start'>
+        <div class="wrapper">
+            
+            <h1>Portfolio</h1>
+            
+            <div class="cute-content">
+            
+                <p>
+                    Cras non enim nec ligula facilisis sagittis ac at nulla. Vestibulum posuere augue in erat scelerisque imperdiet. Curabitur non nisl neque. Sed convallis nisl ut tincidunt mattis. Praesent malesuada, libero ut aliquet congue, tortor diam lacinia elit, et sagittis neque est sed velit. Aenean eget tortor leo. Morbi dapibus convallis lorem id aliquet. Suspendisse malesuada nibh at urna tempor cursus. Suspendisse nec est nec risus viverra tincidunt. Nulla a ligula ac nulla posuere condimentum. Nulla in dictum nisl, viverra ornare diam. Quisque sagittis mauris ac odio consectetur, vel hendrerit tortor rhoncus. Ut ipsum orci, bibendum ac ultrices id, pellentesque vel neque.
+                </p>
+                
+            </div>
+            
+            <div class="simple-container no-float">
+            
+                <%- include project-tiles.ejs %>
+                
+            </div>
+            
+        </div>
+    </section>
+    
+    <section id="portfolio">
+    
+    </section>
+    
+    <section id="portfolio-end">
+    
+    </section>
+	
+    <%- include main-footer.ejs %>
 	
 </body>
 </html>
