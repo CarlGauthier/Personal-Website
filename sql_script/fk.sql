@@ -1,3 +1,0 @@
-USE CarlDB;
-
-ALTER TABLE BlogPost ADD FOREIGN KEY (author) REFERENCES Author(id);

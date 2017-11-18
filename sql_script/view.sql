@@ -1,19 +1,30 @@
-CREATE VIEW HomeProjectView AS (
-	SELECT P.id, P.name, image, priority, C.name context
+CREATE VIEW ProjectView AS (
+	SELECT P.id, P.name, image, priority, PT.name type
     FROM Project P
-    INNER JOIN Context C
-		ON P.context = C.id
+    INNER JOIN ProjectType PT
+		ON P.type = PT.id
 	ORDER BY priority
-    LIMIT 5
 );
--- Select * From HomeProjectView;
 
-CREATE VIEW HomeBlogPostView AS (
-	SELECT title, image, content, date_format(creationDate, "%Y-%m-%d") creationDate, lastEditDate, A.name author 
+CREATE VIEW HomeProjectView AS (
+	SELECT *
+    FROM ProjectView
+	LIMIT 5
+);
+
+CREATE VIEW BlogPostView AS (
+	SELECT BP.id, title, image, ribbonColorHex, ribbonColorHex2, fontColorHex, description, text,
+    BPT.name type, date_format(publicationDate, "%Y-%m-%d")publicationDate, lastEditDate, A.name author 
     FROM BlogPost BP
     INNER JOIN Author A
 		ON BP.author = A.id
-	ORDER BY creationDate
+	INNER JOIN BlogPostType BPT
+		ON BP.type = BPT.id
+	ORDER BY publicationDate
+);
+
+CREATE VIEW HomeBlogPostView AS (
+	SELECT *
+    FROM BlogPostView BP
     LIMIT 2
 );
--- Select * From HomeBlogPostView;

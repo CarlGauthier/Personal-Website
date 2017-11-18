@@ -1,25 +1,50 @@
 
 <% for(var i = 0; i < data[1].length; i++) { %>
 
-    <article class="blog-post">
+    <article class="blog-post" id="BP<%= data[1][i].id %>">
 
-        <div class="image" style="background-image: url(../img/blogPost1000x750/<%= data[1][i].image %>);"><!----></div>
-
-        <div class="cute-content">
+        <header>
+            
+            <div class="image"><!----></div>
+            
+            <div class="ribbon">
+                <p><%= data[1][i].type %></p>
+            </div>
+            
+        </header>
+        
+        <div class="content">
 
             <h2><%= data[1][i].title %></h2>
 
-            <span><a class="link"><%= data[1][i].author %></a> • <%= data[1][i].creationDate %></span>
+            <p class="info"><a class="link"><%= data[1][i].author %></a> • <time datetime="<%= data[1][i].publicationDate %>"><%= data[1][i].publicationDate %></time></p>
 
-            <p>
-                <%- data[1][i].content %>
+            <p class="text">
+                <%- data[1][i].description %>
             </p>
 
-            <div class="align-right">
-                <a class="link">Continuez à lire...</a>
-            </div>
-
         </div>
+        
+        <div class="align-right">
+            <a class="link">Continuez à lire...</a>
+        </div>
+        
+        <style>
+            
+            #BP<%= data[1][i].id %> .image {
+                background-image: url(../img/blogPost1000x500/<%= data[1][i].image %>)
+            }
+            
+            #BP<%= data[1][i].id %> .ribbon p {
+                color: <%= data[1][i].fontColorHex %>;
+                background-color: <%= data[1][i].ribbonColorHex %>;
+            }
+            
+            #BP<%= data[1][i].id %> .ribbon::before {
+                border-bottom-color: <%= data[1][i].ribbonColorHex2 %>
+            }
+
+        </style>
 
     </article>
 
