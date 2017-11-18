@@ -1,0 +1,14 @@
+.col-half {
+    float: left;
+    width: 50%;
+}
+
+.col-third {
+    float: left;
+    width: calc(100% / 3);
+}
+
+.col-fourth {
+    float: left;
+    width: 25%;
+}

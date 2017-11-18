@@ -4,13 +4,7 @@ VALUES
 ('Sample project', 'bird.jpg', 1, 1),
 ('Sample project', 'soccer.jpg', 2, 2),
 ('Sample project', 'rainbow.jpg', 3, 1),
-('Sample project', 'keyboard.jpg', 4, 1),
-('Sample project', 'snow.jpg', 5, 1),
-('Sample project', 'bird.jpg', 9, 1),
-('Sample project', 'soccer.jpg', 8, 2),
-('Sample project', 'rainbow.jpg', 7, 1),
-('Sample project', 'keyboard.jpg', 6, 1),
-('Sample project', 'snow.jpg', 10, 1);
+('Sample project', 'keyboard.jpg', 4, 1);
 
 -- ----------------------------
 
@@ -36,7 +30,7 @@ VALUES
 ('Lorem ipsum dolor sit.', 'wap1.jpg', 'Nullam lacinia, ante id ultricies sagittis, justo lorem convallis leo, sed condimentum augue purus ac enim. Aliquam ac accumsan eros, id faucibus orci. Cras scelerisque elementum libero. Vestibulum ultricies et arcu eget congue. Sed molestie feugiat facilisis. Vivamus ante enim, imperdiet et velit vitae, consequat dapibus eros.', 'Morbi ut dignissim ante. Vestibulum sit amet orci congue, vehicula est ut, faucibus sapien. Vivamus pulvinar neque eu mollis fermentum. Vivamus et libero nec purus imperdiet porttitor. Donec ac ligula orci. Vivamus eu finibus dolor, vel interdum erat. Pellentesque egestas ut metus sed pulvinar. Etiam ut dignissim erat, sit amet efficitur elit. Proin nisl ligula, viverra non accumsan non, malesuada non purus. In id ligula sit amet sem finibus rutrum vel id ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis sem mollis enim porta tempor. Integer mi mauris, pellentesque in nulla vel, convallis viverra enim. Sed dignissim libero nec diam vehicula convallis.', 2);
 
 ALTER TABLE BlogPostType AUTO_INCREMENT = 1;
-INSERT INTO BlogPostType (name, ribbonColorHex, ribbonColorHex2, fontColorHex)
+INSERT INTO BlogPostType (name, colorHex, secColorHex, fontColorHex)
 VALUES
 ('Annonce', '#E04E92', '#9E2F62', '#FFFFFF'),
 ('Dev Blog', '#3C9FD1', '#266F93', '#003C5B'),

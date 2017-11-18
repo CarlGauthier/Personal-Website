@@ -5,10 +5,6 @@
         width: 100%;
     }
     
-    h1, h2, h3 {
-        text-align: center;
-    }
-    
     .href-button {
         width: 100%;
     }
@@ -48,10 +44,6 @@
         margin: -20px auto 25px;
     }
     
-    #presentation h1 {
-        font-size: 60px;
-    }
-    
     .project-tile, .project-tile:nth-child(1) {
         width: 100%;
     }
@@ -64,43 +56,8 @@
         font-size: 20px;
     }
     
-    #home-project .align-right {
-        text-align: center;
-    }
-    
     .blog-post {
         width: calc(100% - 30px);
-    }
-    
-    .blog-post header h2 {
-        font-size: 28px;
-    }
-    
-    .blog-post .content {
-        padding-left: 0;
-        border: none;
-        height: auto;
-    }
-    
-    .blog-post footer {
-        padding-left: 0;
-        border: none;
-    }
-    
-    .blog-post .date {
-        float: none;
-        margin-left: -20px;
-        text-align: center;
-    }
-    
-    .blog-post .link {
-        display: block;
-        float: none;
-        margin: 20px 0;
-        padding: 20px 0;
-        color: #bc4e00;
-        background-color: #FFD700;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     }
     
     .logo {
@@ -110,10 +67,6 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1170px) {
-    
-    h1, h2, h3 {
-        text-align: center;
-    }
     
     .wrapper {
         width: 100%;

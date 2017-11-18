@@ -1,47 +1,49 @@
 
-<% for(var i = 0; i < data[1].length; i++) { %>
+<% for(var i = 0; i < BlogPost.length; i++) { %>
 
-    <article class="blog-post" id="BP<%= data[1][i].id %>">
+    <article class="blog-post" id="BP<%= BlogPost[i].id %>">
 
         <header>
             
             <div class="image"><!----></div>
             
             <div class="ribbon">
-                <p><%= data[1][i].type %></p>
+                <p><%= BlogPost[i].type %></p>
             </div>
             
         </header>
         
         <div class="content">
 
-            <h2><%= data[1][i].title %></h2>
+            <h2><%= BlogPost[i].title %></h2>
 
-            <p class="info"><a class="link"><%= data[1][i].author %></a> • <time datetime="<%= data[1][i].publicationDate %>"><%= data[1][i].publicationDate %></time></p>
+            <p class="info"><a class="link"><%= BlogPost[i].author %></a> • <time datetime="<%= BlogPost[i].publicationDate %>"><%= BlogPost[i].publicationDate %></time></p>
+            
+            <hr class="mini">
 
             <p class="text">
-                <%- data[1][i].description %>
+                <%- BlogPost[i].description %>
             </p>
 
         </div>
         
         <div class="align-right">
-            <a class="link">Continuez à lire...</a>
+            <a class="link">Lire l'article</a>
         </div>
         
         <style>
             
-            #BP<%= data[1][i].id %> .image {
-                background-image: url(../img/blogPost1000x500/<%= data[1][i].image %>)
+            #BP<%= BlogPost[i].id %> .image {
+                background-image: url(../img/blogPost1000x500/<%= BlogPost[i].image %>)
             }
             
-            #BP<%= data[1][i].id %> .ribbon p {
-                color: <%= data[1][i].fontColorHex %>;
-                background-color: <%= data[1][i].ribbonColorHex %>;
+            #BP<%= BlogPost[i].id %> .ribbon p {
+                color: <%= BlogPost[i].fontColorHex %>;
+                background-color: <%= BlogPost[i].colorHex %>;
             }
             
-            #BP<%= data[1][i].id %> .ribbon::before {
-                border-bottom-color: <%= data[1][i].ribbonColorHex2 %>
+            #BP<%= BlogPost[i].id %> .ribbon::before {
+                border-bottom-color: <%= BlogPost[i].secColorHex %>
             }
 
         </style>

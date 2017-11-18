@@ -1,4 +1,7 @@
 @import url("global.css");
+@import url("typography.css");
+@import url("container.css");
+@import url("column.css");
 @import url("structure.css");
 @import url("main-header.css");
 @import url("main-footer.css");

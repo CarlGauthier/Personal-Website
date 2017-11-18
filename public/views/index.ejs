@@ -4,33 +4,70 @@
 <%- include head.ejs %>
 
 <body>
+    
     <%- include home-header.ejs %>
+    
     <section id="introduction">
         <div class="wrapper">
             
             <h1>Introduction</h1>
             
-            <p class="fancy">
+            <p class="fancy bigger">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis lorem in erat pellentesque, at tincidunt sem dapibus. Sed condimentum urna nisi, nec aliquam erat finibus porta. Aenean a metus non ante finibus accumsan nec id lectus. Aliquam fringilla arcu ullamcorper, viverra massa sed, suscipit felis. Donec vitae velit turpis. Phasellus cursus vitae augue a pharetra. Quisque ut augue imperdiet, fringilla velit sit amet, bibendum diam. Nullam lorem libero, aliquet nec tempus vitae, volutpat at sapien. Nullam commodo at lorem quis tincidunt. Duis bibendum, mauris a egestas tincidunt, urna elit lacinia sem, sed aliquet mauris quam ut purus. Vivamus pretium nulla sit amet arcu sollicitudin vulputate vitae ac nisi. Donec vehicula accumsan accumsan. Morbi auctor consectetur massa, et suscipit lacus gravida vitae. Quisque ut scelerisque ligula.
             </p>
             
         </div>
     </section>
+    <section id="featured-project" class="simple-section">
+        
+        <header class="frosted">
+            <div class="wrapper">
+                
+                <h1 class="positive">Projet en vedette</h1>
+
+                <hr class="mini positive">
+                
+            </div>
+        </header>
+        
+        <div class="wrapper no-float">
+            
+            <div class="logo"><!----></div>
+            
+            <div class="col-half">
+                <div class="content frosted">
+                    
+                    <p class="text positive bigger">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis lorem in erat pellentesque, at tincidunt sem dapibus. Sed condimentum urna nisi, nec aliquam erat finibus porta.
+                    </p>
+                    
+                    <div class="align-right">
+                        <a class="href-button positive">En apprendre plus</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
     <section id='home-project'>
         <div class="wrapper">
             
-            <h1>Projets en vedette</h1>
+            <h1 class="positive">Plus de projets</h1>
             
-            <div class="simple-container no-float">
+            <hr class="mini positive">
             
-            <%- include project-tiles.ejs %>
-                
-            </div>
-            
-            <div class="align-right">
-                <a class="href-button">Voir tous les projets</a>
-            </div>
         </div>
+            
+        <div class="simple-container no-float">
+
+            <%- include project-tiles.ejs %>
+
+        </div>
+        
+        <div class="align-center">
+            <a class="href-button positive">Voir tous les projets</a>
+        </div>
+        
     </section>
     <section id="home-blog">
         <div class="wrapper">
@@ -44,7 +81,7 @@
 
             </div>
             
-            <div class="align-right">
+            <div class="align-center">
                 <a class="href-button">Visitez le blog</a>
             </div>
         </div>

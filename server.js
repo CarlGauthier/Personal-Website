@@ -18,11 +18,17 @@ var connection = mysql.createConnection({
 connection.connect(function(err) {
     if (err) throw err;
         console.log("Connected!");
-    
 });
 
 app.get('/', function(req, res) {
-    Action('index.ejs', 'Select * From HomeProjectView; Select * From HomeBlogPostView', 'Accueil', res);
+    
+    connection.query('Select * From HomeProjectView; Select * From HomeBlogPostView', function(err, result) {
+        if(err){
+            throw err;
+        } else {
+            res.render('index.ejs', {title: 'Accueil', Project: result[0], BlogPost: result[1]});
+        }
+    });
 });
 
 app.get('/Portfolio', function(req, res) {

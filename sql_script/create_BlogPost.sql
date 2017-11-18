@@ -10,7 +10,7 @@ CREATE TABLE BlogPost
     lastEditDate	DATETIME		NULL,
     
     author			TINYINT			NOT NULL	DEFAULT 1,	-- FK
-    type			TINYINT			NOT NULL	DEFAULT 1,	-- FK
+    type			TINYINT			NOT NULL,				-- FK
     
     PRIMARY KEY (id)
 );
@@ -20,9 +20,9 @@ CREATE TABLE BlogPostType
 	id				TINYINT			NOT NULL	AUTO_INCREMENT,
     
     name			VARCHAR(25)		NOT NULL,
-    ribbonColorHex	CHAR(7)			NOT NULL,
-    ribbonColorHex2	CHAR(7)			NOT NULL,
-    fontColorHex	CHAR(7)			NOT NULL	DEFAULT 0,
+    colorHex		CHAR(7)			NOT NULL,
+    secColorHex		CHAR(7)			NOT NULL,
+    fontColorHex	CHAR(7)			NOT NULL,
     
     PRIMARY KEY (id)
 );

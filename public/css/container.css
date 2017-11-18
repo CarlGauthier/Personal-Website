@@ -1,0 +1,23 @@
+.wrapper {
+    padding: 0 40px;
+    margin: auto;
+    width: 1500px;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 50px -15px;
+}
+
+.simple-container {
+    margin: 50px 0;
+}
+
+.container-3D {
+    transform-style: preserve-3d;
+    perspective: 2500px;
+}
+
+section {
+    padding: 40px 0;
+}

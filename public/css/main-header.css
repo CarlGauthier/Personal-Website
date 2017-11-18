@@ -1,6 +1,7 @@
 #main-header {
     padding: 20px 0;
     background: #0051FF url(../img/header.png) center;
+    background-attachment: fixed;
     background-size: cover;
     box-shadow: 0 -2px 5px rgba(0,0,0,0.3) inset;
 }

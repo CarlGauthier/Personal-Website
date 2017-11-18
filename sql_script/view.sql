@@ -13,7 +13,7 @@ CREATE VIEW HomeProjectView AS (
 );
 
 CREATE VIEW BlogPostView AS (
-	SELECT BP.id, title, image, ribbonColorHex, ribbonColorHex2, fontColorHex, description, text,
+	SELECT BP.id, title, image, colorHex, secColorHex, fontColorHex, description, text,
     BPT.name type, date_format(publicationDate, "%Y-%m-%d")publicationDate, lastEditDate, A.name author 
     FROM BlogPost BP
     INNER JOIN Author A
